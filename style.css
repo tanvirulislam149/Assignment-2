@@ -1,0 +1,268 @@
+/*------------------------------- Common styles----------------------- */
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 60px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*-------------------------------- Heading --------------------------- */
+header .heading{
+    padding: 10px 70px;
+    font-size: 20px;
+    background-color: lightseagreen;
+}
+/*--------------------------------- Banner  ----------------------------*/
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner-text{
+    width: 50%;
+    padding: 50px;
+}
+.banner-text .text-animation{
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    position: relative;
+}
+.text-animation::before{
+    content: "Start Your Journey as Influencer";
+    color: blue;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation: typing 5s linear infinite;
+}
+@keyframes typing {
+    0% {
+        content: "S|";
+    }
+    3% {
+        content: "St|";
+    }
+    6% {
+        content: "Sta|";
+    }
+    9% {
+        content: "Star|";
+    }
+    12% {
+        content: "Start|";
+    }
+    15% {
+        content: "Start |";
+    }
+    18% {
+        content: "Start Y|";
+    }
+    21% {
+        content: "Start Yo|";
+    }
+    24% {
+        content: "Start You|";
+    }
+    27% {
+        content: "Start Your|";
+    }
+    30% {
+        content: "Start Your |";
+    }
+    33% {
+        content: "Start Your J|";
+    }
+    36% {
+        content: "Start Your Jo|";
+    }
+    39% {
+        content: "Start Your Jou|";
+    }
+    42% {
+        content: "Start Your Jour|";
+    }
+    45% {
+        content: "Start Your Journ|";
+    }
+    48% {
+        content: "Start Your Journe|";
+    }
+    51% {
+        content: "Start Your Journey|";
+    }
+    54% {
+        content: "Start Your Journey |";
+    }
+    57% {
+        content: "Start Your Journey a|";
+    }
+    60% {
+        content: "Start Your Journey as |";
+    }
+    63% {
+        content: "Start Your Journey as |";
+    }
+    66% {
+        content: "Start Your Journey as I|";
+    }
+    69% {
+        content: "Start Your Journey as In|";
+    }
+    72% {
+        content: "Start Your Journey as Inf|";
+    }
+    75% {
+        content: "Start Your Journey as Infl|";
+    }
+    78% {
+        content: "Start Your Journey as Influ|";
+    }
+    81% {
+        content: "Start Your Journey as Influe|";
+    }
+    84% {
+        content: "Start Your Journey as Influen|";
+    }
+    87% {
+        content: "Start Your Journey as Influenc|";
+    }
+    90% {
+        content: "Start Your Journey as Influence|";
+    }
+    93% {
+        content: "Start Your Journey as Influencer|";
+    }
+    96% {
+        content: "Start Your Journey as Influencer|";
+    }
+    99% {
+        content: "Start Your Journey as Influencer|";
+    }
+    100% {
+        content: "";
+    }
+}
+.button{
+    border: none;
+    background-color: rgb(206, 76, 76);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+.banner-img{
+    padding: 0px 50px;
+    justify-content: center;
+}
+/*--------------------------------- Section-2 --------------------------------*/
+.section-title{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+.section-body .box{
+    box-shadow: 5px 15px 20px gray;
+    border-radius: 10px;
+}
+.section-body .box .content{
+    padding: 10px;
+}
+.content .fas{
+    color: orange;
+}
+.section-tail{
+    color: rgb(192, 73, 113);
+    text-align: right;
+    margin-top: 40px;
+}
+/*-------------------------------- Section-3 ---------------------------------*/
+.get-in-touch{
+    display: flex;
+}
+.input{
+    background-color: rgb(241, 235, 235);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.email-button{
+    border: none;
+    background-color: rgb(81, 238, 128);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+/*-------------------------------- Footer  -----------------------------------*/
+.footer{
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px;
+}
+.footer .fab{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*------------------------- Media Query (Mobile)----------------------------- */
+
+@media screen and (max-width: 680px) {
+    .heading{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-img{
+        padding: 0px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .text-animation{
+        font-size: 30px;
+    }
+    .section-body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .get-in-touch{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+    }
+  }
+  /*---------------------------- Media Query (Tab) -------------------------*/
+  @media screen and (min-width: 681px) and (max-width: 992px) {
+    .heading{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
